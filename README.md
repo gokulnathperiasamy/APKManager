@@ -2,7 +2,9 @@
 
 > Provides option to get the APK details which is published in Google Play Store.
 
-### API Usage
+### API Documentation
+
+Make sure you import this Android library project into your IDE and set this project as a dependency.
 
 ##### To get the version of the APK published in Google Play Store:
 
@@ -28,7 +30,7 @@ private void checkForUpdate() {
             @Override
             protected Boolean doInBackground(Void... params) {
                 try {
-                    String version = APKManager.getPlayStoreVersion(BuildConfig.APPLICATION_ID);
+                    String version = APKManager.getPlayStoreVersion(BuildConfig.APPLICATION_ID);   // Returns the version available in Google Play Store.
                     return APKManager.isUpdateAvailable(BuildConfig.APPLICATION_ID, BuildConfig.APP_VERSION_NAME);  
                 } catch (Exception e) {
                     return false;
@@ -38,6 +40,7 @@ private void checkForUpdate() {
             @Override
             protected void onPostExecute(Boolean flag) {
                 if (flag) {
+                    // Your logic if update is available ...
                     Toast.makeText(getApplicationContext(), "Update Available", Toast.LENGTH_LONG).show();
                 }
             }
@@ -45,6 +48,9 @@ private void checkForUpdate() {
     }
 ```
 
+### Author
+
+- Gokul Nath KP
 
 ### Contribution Guidelines
 
@@ -57,3 +63,19 @@ Please ensure your pull request adheres to the following guidelines:
 - Keep descriptions short and simple, but descriptive.
 
 Thank you for your suggestions!
+
+### License
+
+```
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
