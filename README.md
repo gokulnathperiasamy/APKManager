@@ -4,15 +4,15 @@
 
 ### API Usage
 
-> To get the version of the APK published in Google Play Store:
-<br/><br/>
+##### To get the version of the APK published in Google Play Store:
+
 ```
 // APPLICATION_ID: "com.domain.package"
 // Returns String
 APKManager.getPlayStoreVersion(BuildConfig.APPLICATION_ID);
 ```
-<br/><br/>
-> To check if the version available in device and Google Play Store are same:
+
+##### To check if the version available in device and Google Play Store are same:
 ```
 // APPLICATION_ID: "com.domain.package"
 // APP_VERSION_NAME: "1.0.1"
