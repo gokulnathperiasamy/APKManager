@@ -1,5 +1,29 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'apkmanager'
+
+    publishedGroupId = 'com.gokul.apkmanager'
+    libraryName = 'APKManager'
+    artifact = 'apkmanager'
+
+    libraryDescription = 'Provides option to get the APK details which is published in Google Play Store.'
+
+    siteUrl = 'https://github.com/gokulnathperiasamy/APKManager'
+    gitUrl = 'https://github.com/gokulnathperiasamy/APKManager.git'
+
+    libraryVersion = '1.0'
+
+    developerId = 'nath-manutd'
+    developerName = 'Gokul Nath KP'
+    developerEmail = 'nath.manutd@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
@@ -22,3 +46,6 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'org.jsoup:jsoup:1.8.3'
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
