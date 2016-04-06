@@ -2,7 +2,25 @@
 
 > Provides option to get the APK details which is published in Google Play Store.
 
-## Usage
+### API Usage
+
+> To get the version of the APK published in Google Play Store:
+<br/><br/>
+```
+// APPLICATION_ID: "com.domain.package"
+// Returns String
+APKManager.getPlayStoreVersion(BuildConfig.APPLICATION_ID);
+```
+<br/><br/>
+> To check if the version available in device and Google Play Store are same:
+```
+// APPLICATION_ID: "com.domain.package"
+// APP_VERSION_NAME: "1.0.1"
+// Returns boolean
+APKManager.isUpdateAvailable(BuildConfig.APPLICATION_ID, BuildConfig.APP_VERSION_NAME); 
+```
+
+### Sample Usage
 
 ```
 private void checkForUpdate() {
@@ -28,19 +46,14 @@ private void checkForUpdate() {
 ```
 
 
-## Contribution Guidelines
+### Contribution Guidelines
 
 Contributions are always welcome! Please read below guideline before contributing.
 
 Please ensure your pull request adheres to the following guidelines:
 
 - Search previous suggestions before making a new one, as yours may be a duplicate.
-- Suggested READMEs should be beautiful or stand out in some way.
 - Make an individual pull request for each suggestion.
-- New categories, or improvements to the existing categorization are welcome.
 - Keep descriptions short and simple, but descriptive.
-- Start the description with a capital and end with a full stop/period.
-- Check your spelling and grammar.
-- Make sure your text editor is set to remove trailing whitespace.
 
 Thank you for your suggestions!
