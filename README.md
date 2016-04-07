@@ -4,7 +4,17 @@
 
 ### API Documentation
 
-Make sure you import this Android library project into your IDE and set this project as a dependency.
+###### Gradle Plugin
+
+Library is available in jcenter repository. Add below line in your ```build.gradle``` file:
+
+```
+compile 'com.gokul.apkmanager:apkmanager:1.0'
+```
+
+###### Direct Usage
+
+Make sure you import this Android library project into your IDE and set this library as a dependency.
 
 ##### To get the version of the APK published in Google Play Store:
 
@@ -14,7 +24,7 @@ Make sure you import this Android library project into your IDE and set this pro
 APKManager.getPlayStoreVersion(BuildConfig.APPLICATION_ID);
 ```
 
-##### To check if the version available in device and Google Play Store are same:
+##### To check if Google Play Store has updated version:
 ```
 // APPLICATION_ID: "com.domain.package"
 // APP_VERSION_NAME: "1.0.1"
