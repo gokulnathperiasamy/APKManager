@@ -1,6 +1,6 @@
 # APKManager
 
-> Provides option to get the APK details which is published in Google Play Store.
+> Provides option to get the APK version details, which is published in Google Play Store.
 
 ### API Documentation
 
@@ -51,7 +51,6 @@ private void checkForUpdate() {
             protected void onPostExecute(Boolean flag) {
                 if (flag) {
                     // Your logic if update is available ...
-                    Toast.makeText(getApplicationContext(), "Update Available", Toast.LENGTH_LONG).show();
                 }
             }
         }.execute();
