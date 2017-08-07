@@ -12,6 +12,25 @@ Library is available in jcenter repository. Add below line in your ```build.grad
 compile 'com.gokul.apkmanager:apkmanager:1.0'
 ```
 
+###### Maven Dependency
+
+```
+<dependency>
+  <groupId>com.gokul.apkmanager</groupId>
+  <artifactId>apkmanager</artifactId>
+  <version>1.0</version>
+  <type>pom</type>
+</dependency>
+```
+
+###### Ivy Dependency
+
+```
+<dependency org='com.gokul.apkmanager' name='apkmanager' rev='1.0'>
+  <artifact name='apkmanager' ext='pom' ></artifact>
+</dependency>
+```
+
 ###### Direct Usage
 
 Make sure you import this Android library project into your IDE and set this library as a dependency.
