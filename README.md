@@ -1,4 +1,4 @@
-# APKManager
+# APKManager [ ![Download](https://api.bintray.com/packages/nath-manutd/maven/apkmanager/images/download.svg) ](https://bintray.com/nath-manutd/maven/apkmanager/_latestVersion)
 
 > Provides option to get the APK version details, which is published in Google Play Store.
 
