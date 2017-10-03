@@ -2,6 +2,8 @@
 
 > Provides option to get the APK version details, which is published in Google Play Store.
 
+> [Bintray Jcenter](https://bintray.com/nath-manutd/maven/apkmanager)
+
 ### API Documentation
 
 ###### Gradle Plugin
